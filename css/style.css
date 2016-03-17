@@ -1,0 +1,75 @@
+body {
+	margin-top: 125px;
+}
+
+.nav {
+	margin-top: 28px;
+}
+
+footer {
+	padding: 30px 0;	
+}
+
+.move-here {
+    z-index: 111111;
+}
+.custom-child .list-group-item {
+    background: #EEEEEE;
+}
+.list-group-item  {
+
+    margin: 5px 0;
+
+}
+.list-group-item:first-child {
+    border-top-left-radius : 0;
+    border-top-right-radius :0;
+}
+.sort-active {
+    opacity: .3;
+    float: left;
+    position: relative;
+    margin-right: 15px ;
+    cursor: move;
+}
+
+.space-for-drop {
+    border: 2px dashed #555555;
+    width: 90%;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+
+}
+#space-for-drop {
+    display: none;
+}
+.custom-child .custom-dropable{
+    /*float: right;*/
+}
+.pop-over-trigger {
+    /*float: right;*/
+    cursor: pointer;
+}
+.glyphicon {
+    opacity: .5;
+    cursor: pointer;
+}
+.glyphicon:hover {
+    opacity: .9;
+}
+.hide {
+    display: none;
+}
+.edit-focus {
+    border-color: #66AFE9;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);
+    outline: 0 none;
+    border-right-width:15px;
+}
+.delete-list {
+    float: right;
+}
+.content input {
+    margin-bottom: 10px;
+}

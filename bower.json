@@ -1,0 +1,32 @@
+{
+  "name": "Dynamic tree",
+  "authors": [
+    "Ahtasham Himel <himel.46@gmail.com>"
+  ],
+  "description": "Draggable and sortable tree structured list",
+  "main": "index.html",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "tree",
+    "menu",
+    "drag",
+    "sort",
+    "jquery-ui",
+    "list"
+  ],
+  "license": "none",
+  "homepage": "none",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "jquery-ui": "^1.11.4"
+  }
+}

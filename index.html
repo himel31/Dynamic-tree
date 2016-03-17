@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Dynamic Tree List </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                Draggable and sortable tree structured list
+            </div>
+        </div><!-- /.container -->
+    </nav>
+
+    <div  class="container">
+        <div class="row">
+            <!--JSON manage-->
+            <div class=" col-lg-6 col-md-6">
+
+                <div class="panel panel-default" id = "show_result">
+                    <div class="panel-body"></div>                    
+                </div>
+            </div>
+            <div  class=" col-lg-6 col-md-6">
+                <button id = "make_json" type="button" class="btn btn-default">Generate JSON</button>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-lg-6 col-md-6" id = "drop-container">
+                <!--tree-->
+                <div class="panel panel-default">
+                    <div class="panel-heading">Drag here to add a new list!</div>
+                    <div class="panel-body">
+                        <div class="list-group">
+
+                            <div class="custom-dropable">
+                                <div class="list-group-item row">
+                                    <div class="sort-active glyphicon glyphicon-sort col-lg-1 col-md-1 col-sm-1" title = 'Drag to sort'></div>
+                                    <div class="col-lg-8 col-md-8 col-sm-8">
+                                        <a href="javascript:void(0);" class="custom-title">List title</a>
+                                    </div>
+
+                                    <!-- <div class="glyphicon glyphicon-edit pop-over-trigger col-lg-2"></div> -->
+                                    <div class="glyphicon glyphicon-trash delete-list  col-lg-1 col-md-1 col-sm-1"></div>
+                                </div>
+                                <div class="custom-child"></div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" col-lg-6 col-md-6">
+
+                <div class="row">
+                    <div class=" col-lg-6 col-md-6">
+                        <div class="new-dropable custom-dropable"> 
+                            <div class="list-group-item row">
+                                <div class="sort-active hide glyphicon glyphicon-sort col-lg-1 col-md-1 col-sm-1" title = 'Drag To Sort'></div>
+
+                                <div class="col-lg-8 col-md-8 col-sm-8">
+                                    <a href="javascript:void(0);" class="custom-title">New List</a>
+                                </div>
+                                <div class="glyphicon hide glyphicon-trash delete-list col-lg-1 col-md-1 col-sm-1"></div>
+                            </div>
+                            <div class="custom-child"></div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!--edit form-->
+                <div id = 'popover-form' class="popover-markup">                 
+                    <div class="head"><h3>Edit List</h3></div>
+                    <div class="content">
+                        <div class="form-group">
+                            <input type="text" class="form-control" value="" id="form-title" placeholder="Title">
+
+                            <input type="text" class="form-control" value="" id="form-link" placeholder="Link">
+                        </div>
+                        <button type="submit" class="btn btn-default btn-block custom-submit">Save</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>                
+
+        <footer>
+            <hr>
+            <div class="row">
+                <div class="col-lg-12">
+
+                </div>
+            </div>
+        </footer>
+
+    </div><!-- /.container -->
+
+    <!-- JavaScript -->
+
+    <link rel="stylesheet" href="bower_components/jquery-ui/themes/ui-lightness/jquery-ui.min.css">
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+    
+</body>
+</html>
