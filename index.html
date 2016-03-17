@@ -21,12 +21,18 @@
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
-                Draggable and sortable tree structured list
+                <h4 >Draggable and sortable tree structured list</h4>
             </div>
         </div><!-- /.container -->
     </nav>
 
     <div  class="container">
+
+        <!-- space for drop -->
+        <div id="space-for-drop">
+            <div class = "space-for-drop alert"></div>
+        </div>
+
         <div class="row">
             <!--JSON manage-->
             <div class=" col-lg-6 col-md-6">
@@ -44,7 +50,12 @@
             <div class="col-lg-6 col-md-6" id = "drop-container">
                 <!--tree-->
                 <div class="panel panel-default">
-                    <div class="panel-heading">Drag here to add a new list!</div>
+                    <div class="panel-heading">
+                        <p>
+                            <span class="glyphicon glyphicon-info-sign"></span>
+                            Drop here to add a new list!
+                        </p>
+                    </div>
                     <div class="panel-body">
                         <div class="list-group">
 
@@ -56,7 +67,7 @@
                                     </div>
 
                                     <!-- <div class="glyphicon glyphicon-edit pop-over-trigger col-lg-2"></div> -->
-                                    <div class="glyphicon glyphicon-trash delete-list  col-lg-1 col-md-1 col-sm-1"></div>
+                                    <div title="Delete list, including its child" class="glyphicon glyphicon-trash delete-list  col-lg-1 col-md-1 col-sm-1"></div>
                                 </div>
                                 <div class="custom-child"></div>
 
@@ -70,7 +81,7 @@
             <div class=" col-lg-6 col-md-6">
 
                 <div class="row">
-                    <div class=" col-lg-6 col-md-6">
+                    <div class=" col-lg-6 col-md-6 col-sm-6">
                         <div class="new-dropable custom-dropable"> 
                             <div class="list-group-item row">
                                 <div class="sort-active hide glyphicon glyphicon-sort col-lg-1 col-md-1 col-sm-1" title = 'Drag To Sort'></div>
@@ -78,17 +89,25 @@
                                 <div class="col-lg-8 col-md-8 col-sm-8">
                                     <a href="javascript:void(0);" class="custom-title">New List</a>
                                 </div>
-                                <div class="glyphicon hide glyphicon-trash delete-list col-lg-1 col-md-1 col-sm-1"></div>
+                                <div title="Delete list, including its child" class="glyphicon hide glyphicon-trash delete-list col-lg-1 col-md-1 col-sm-1"></div>
                             </div>
                             <div class="custom-child"></div>
-
+                        </div>
+                        <div class="col-lg-12 col-md-12">
+                            <span class="glyphicon glyphicon-info-sign"></span>
+                            Drag new list inside the left box or over any list to create new child list.
                         </div>
                     </div>
                 </div>
 
                 <!--edit form-->
                 <div id = 'popover-form' class="popover-markup">                 
-                    <div class="head"><h3>Edit List</h3></div>
+                    <div class="head"><h3>Edit List</h3>
+                        <p>
+                            <span class="glyphicon glyphicon-info-sign"></span>
+                            Click on a list to edit...
+                        </p>
+                    </div>
                     <div class="content">
                         <div class="form-group">
                             <input type="text" class="form-control" value="" id="form-title" placeholder="Title">
@@ -107,7 +126,14 @@
             <hr>
             <div class="row">
                 <div class="col-lg-12">
-
+                    <p>
+                        <span class="glyphicon glyphicon-info-sign"></span>
+                        Drag-drop <span class="glyphicon glyphicon-sort"></span> icon of each list to sort
+                    </p>
+                    <p>
+                        <span class="glyphicon glyphicon-info-sign"></span>
+                        Drag a list and drop over another list to make child list.
+                    </p>
                 </div>
             </div>
         </footer>
