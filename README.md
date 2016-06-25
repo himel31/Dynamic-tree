@@ -17,4 +17,4 @@ bower install # install the components
 
 ### Contributing
 
-Any good patches are always appreiated
+Any good patches are always appreciated
